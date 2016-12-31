@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-
+#밑에가 url을 직접 만지는 부분이다.
 urlpatterns = [
-    url(r'^blog/', include('blog.urls')),
+    url(r'^', include('blog.urls')),
 
     url(r'^admin/', admin.site.urls),
 ]
